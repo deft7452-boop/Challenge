@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Spot the Scam – แยกให้ออก ข้อความไหนหลอก</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<section id="intro">
+  <p class="mute">แบบทดสอบสำหรับนักศึกษา · ใช้เวลาประมาณ 3 นาที</p>
+  <h1>Spot the Scam: ข้อความนี้จริงหรือหลอก?</h1>
+  <p>คุณจะเจอข้อความ 10 ข้อ บางข้อเป็นของจริง บางข้อเป็นกลโกง ตัดสินใจให้เร็วเหมือนตอนเจอในมือถือจริง แล้วระบบจะบอกว่าสัญญาณเตือนอยู่ตรงไหน</p>
+  <p class="mute">ไม่เก็บข้อมูลส่วนตัว ผลลัพธ์อยู่ในเครื่องคุณเท่านั้น</p>
+  <button class="btn primary" id="start">เริ่มทดสอบ</button>
+</section>
+
+<section id="quiz" class="hide">
+  <div class="meta"><span id="no"></span><span id="sc"></span></div>
+  <div class="bar"><i id="pg"></i></div>
+  <div class="phone">
+    <div class="chan"><span id="chan"></span><span id="time"></span></div>
+    <div class="from" id="from"></div>
+    <div class="msg" id="msg"></div>
+  </div>
+  <div id="ask">
+    <div class="row">
+      <button class="btn real" data-a="0">ของจริง</button>
+      <button class="btn scam" data-a="1">กลโกง</button>
+    </div>
+  </div>
+  <div id="fb" class="hide">
+    <div class="fb" id="fbbox"><strong id="fbt"></strong><span id="fbx"></span><ul id="fbl"></ul></div>
+    <button class="btn primary" id="next">ข้อต่อไป</button>
+  </div>
+</section>
+
+<section id="end" class="hide">
+  <p class="mute">ผลของคุณ</p>
+  <div class="score"><span id="fs"></span>/10</div>
+  <h2 id="lvl"></h2>
+  <p id="lvlx"></p>
+  <div id="review"></div>
+  <div class="box">
+    <h2>เก็บเข้า Portfolio</h2>
+    <p class="mute">คัดลอกสรุปนี้ไปวางในพอร์ตโฟลิโอได้เลย แก้ไขข้อความก่อนก็ได้</p>
+    <textarea id="sum" aria-label="สรุปผลสำหรับ Portfolio"></textarea>
+    <p><button class="btn" id="copy">คัดลอกสรุป</button> <span class="mute" id="cmsg"></span></p>
+  </div>
+  <button class="btn primary" id="again">เล่นอีกครั้ง</button>
+</section>
+</main>
+
+<script src="questions.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
