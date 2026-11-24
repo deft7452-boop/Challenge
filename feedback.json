@@ -30,7 +30,27 @@
   },
   "portfolio": {
     "heading": "เก็บเข้า Portfolio",
-    "hint": "คัดลอกสรุปนี้ไปวางในพอร์ตโฟลิโอได้เลย แก้ไขข้อความก่อนก็ได้",
-    "template": "Spot the Scam: ทดลองกับตัวเอง\nคะแนน: {score}/{total} ({level})\nพลาดกลโกงที่หลอกสำเร็จ {missedScams} จาก {totalScams} ข้อ และเข้าใจผิดว่าข้อความจริงเป็นกลโกง {falseAlarms} ข้อ\nสิ่งที่เรียนรู้: สัญญาณร่วมของกลโกงคือการเร่งเวลา การขอเงินหรือข้อมูลส่วนตัว ลิงก์หรือบัญชีที่ไม่ตรงกับต้นทางจริง และการให้ย้ายไปคุยช่องทางอื่น\nวิธีป้องกัน: หยุดก่อนกด ตรวจต้นทางผ่านช่องทางที่เชื่อถือได้ และโทรยืนยันกับบุคคลหรือหน่วยงานโดยตรง"
+    "hint": "คัดลอกข้อมูลนี้ (รูปแบบ JSON) ไปวางในพอร์ตโฟลิโอได้เลย แก้ไขข้อความก่อนก็ได้",
+    "entry": {
+      "title": "Spot the Scam",
+      "type": "Digital Literacy",
+      "date": "{date}",
+      "role": "Participant",
+      "description": "Completed a phishing awareness challenge and scored {score}/{total} ({level}).",
+      "skills": [
+        "Critical Thinking",
+        "Problem Solving",
+        "Digital Literacy"
+      ],
+      "reflection": {
+        "whatIDid": "Looked at {total} example messages and marked which were scams.",
+        "whatILearned": "I learned how to identify online scams.",
+        "challenge": "Some scam messages looked very real.",
+        "nextStep": "Check the sender address before clicking any link."
+      },
+      "evidence": [
+        "https://example.com/spot-the-scam-result"
+      ]
+    }
   }
 }

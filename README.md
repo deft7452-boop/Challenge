@@ -19,5 +19,5 @@
 ถ้าเพิ่มหรือลดจำนวนข้อ ให้แก้ข้อความ "10" ใน `index.html` (หน้าแนะนำ) และ `script.js` (คำว่า /10 และ "ถูก ... ข้อ") ให้ตรงกัน
 
 ## แก้ข้อความ feedback
-แก้ที่ `feedback.json`: `levels` คือข้อความตามช่วงคะแนน (`min` คือคะแนนขั้นต่ำ), `portfolio.template` ใช้ตัวแปร `{score} {total} {level} {totalScams} {missedScams} {falseAlarms}`
+แก้ที่ `feedback.json`: `levels` คือข้อความตามช่วงคะแนน (`min` คือคะแนนขั้นต่ำ), `portfolio.entry` คือข้อมูล Portfolio รูปแบบ JSON ที่ทุกคนได้เหมือนกัน ใช้ตัวแปรได้ `{date} {score} {total} {level} {totalScams} {missedScams} {falseAlarms}` (ปรับ `evidence` เป็นลิงก์จริงของคุณ)
 ถ้าเปิด `index.html` ตรงๆ จากเครื่อง (file://) เบราว์เซอร์อาจไม่ยอมโหลด JSON เกมจะใช้สำเนาสำรองใน `script.js` แทน ให้รันผ่านเว็บเซิร์ฟเวอร์หรือโฮสต์ออนไลน์เพื่อให้อ่านจาก `feedback.json` จริง
